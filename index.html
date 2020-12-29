@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .box{
+            background-color: black;
+            width: 100vw;
+            height: 50vh;
+        }
+        .square {
+            width: 30px;
+            height: 30px;
+            background-color: Orange;
+            animation: nudge 5s linear infinite alternate;
+        }
+        .triangle {
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            animation: nudge 5s ease-in-out infinite alternate;
+        }
+        .circle {
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+            animation: nudge 5s ease infinite alternate;
+        }
+        @keyframes nudge {
+            0% {
+                transform: translate(0,10px0) rotate(0deg);
+            }
+            
+            50% {
+                transform: translate(150px,150px) rotate(25deg);
+            }
+
+            100% {
+                transform: translate(-150px,-50) rotate(-90deg);
+            }
+        }
+    </style>
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <div class="square"></div>
+        <div class="triangle"></div>
+        <div class="circle"></div>
+    </div>
+    
+    
+</body>
+</html>
